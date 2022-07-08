@@ -1,0 +1,164 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+  overflow-x: hidden;
+  font-family: "Arima", cursive;
+}
+
+header {
+  background-image: url("images/oleee2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  /* opacity: 0.2; */
+}
+.clearfix:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0px;
+  clear: both;
+}
+
+.row {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.logo {
+  max-height: 200px;
+  margin: auto;
+  float: left;
+  margin-top: 10px;
+}
+.main-nav {
+  float: right;
+  margin-top: 100px;
+  text-decoration: none;
+}
+
+.main-nav li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 40px;
+  
+ 
+}
+
+.main-nav li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 90%;
+  font-weight: bold;
+  
+  color: black;
+ 
+}
+.main-nav li a:hover {
+  border-bottom: 2px solid rgb(3, 12, 24);
+}
+.header-main-content {
+  width: 1180px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, -45%);
+  
+}
+
+h1 {
+  color: rgb(2, 17, 30);
+  font-size: 240%;
+  word-spacing: 5px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  text-decoration: none;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  /* font-weight: lighter; */
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 200px;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+.btn1 {
+  background-color: transparent;
+  color: purple;
+  margin-right: 15px;
+  border: 1px solid purple;
+}
+.btn1:hover{
+    background-color: rgb(186, 181, 192);
+
+}
+.btn2 {
+  background-color: transparent;
+  color: rgb(56, 108, 154);
+  border: 1px solid rgb(28, 18, 18);
+}
+.btn2:hover{
+    background-color: rgb(210, 242, 193);
+
+}
+.colorchange{
+    animation: colorchangehello 1s infinite;
+
+}
+@keyframes colorchangehello{
+    0%{color:blueviolet}
+    24%{color:rgb(29, 228, 228)}
+    50%{color:rgb(20, 230, 20)}
+    100%{color: rgb(225, 43, 43);}
+}
+.icon{
+    display:none;
+}
+
+/* responsive queries */
+@media only screen and (max-width:1180px){
+    .header-main-content{
+        width: 100%;
+        padding:0 2%;
+    }
+}
+
+@media only screen and (max-width:1180px){
+    .h1{
+        font-size: 200%;
+        
+    }
+}
+@media only screen and (max-width:1180px){
+    .h1{
+       font-size: 180%;
+    }
+    .main-nav{
+        display: none;
+    }
+    .icon{
+        display:inline-block;
+        color: black;
+        margin-top:30px;
+        margin-right:20px;
+        float: right;
+        
+    }
+    main-nav li{
+        display:block;
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width:480px){
+    .btn2{
+       margin-bottom: 20px;
+    }
+}
